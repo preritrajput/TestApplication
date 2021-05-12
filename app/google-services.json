@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "973354594760",
+    "project_id": "testapplication-bd82e",
+    "storage_bucket": "testapplication-bd82e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973354594760:android:03a075801a4056d004d0fd",
+        "android_client_info": {
+          "package_name": "com.preritrajput.testapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973354594760-vuq9q6dlp2mgg1dv6o9s526dmpi90n5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6BPeXNbXVb9YVL0XxLHIZqOVO4vF3DsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973354594760-vuq9q6dlp2mgg1dv6o9s526dmpi90n5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

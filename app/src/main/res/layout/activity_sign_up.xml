@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:onClick="back"
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/frutiger_bold"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/cornor_up"
+        android:drawableStart="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="25dp"
+        android:maxLines="1"
+        android:drawableTint="@color/grey"
+        android:elevation="5dp"
+        android:fontFamily="@font/frutiger_bold"
+        android:hint="User Name"
+        android:padding="25dp"
+        android:textColor="@color/dark_blue"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="80dp"
+        android:maxLines="1"
+        android:background="@drawable/cornor_down"
+        android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+        android:drawablePadding="25dp"
+        android:drawableTint="@color/grey"
+        android:elevation="5dp"
+        android:fontFamily="@font/frutiger_bold"
+        android:hint="Mobile no."
+        android:inputType="phone"
+        android:padding="25dp"
+        android:textColor="@color/dark_blue"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="55dp"
+        android:elevation="6dp"
+        android:src="@drawable/ic_next"
+        app:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/frutiger"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FF2626"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:visibility="gone"
+        android:elevation="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_trans80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerInParent="true"
+            android:id="@+id/cardView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            app:cardCornerRadius="50dp">
+
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:indeterminateTint="@color/dark_blue"
+                android:layout_centerInParent="true"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
